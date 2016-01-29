@@ -1,13 +1,15 @@
 <!doctype html>
 <html lang="">
   <head>
+    <script src="https://use.typekit.net/tez3fsx.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
     <meta charset="utf-8">
     <title>Weblio</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="https://use.typekit.net/tez3fsx.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
 
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -15,8 +17,9 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/mk-3Dcarousel.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link href="icons/style.css" rel="stylesheet">
+    <link href="icons/style.css" rel="stylesheet" type="text/css">
     <!-- endbuild -->
   </head>
   <body>
@@ -78,7 +81,7 @@
 
       <div class="container">
         <div class="row row-centered">
-          <article class="col-sm-6 col-services-2">
+          <article class="col-sm-6 col-services">
             <img class="icon" src="images/design.png" alt="Design">
                 <span class="content"><h3>Design</h3>
                 <p>Being responsive is the new black. You ask, we deliver!</p></span>
@@ -104,28 +107,42 @@
       </div>
     </section>
 
-    <section id="get-thnigs-done">
-    <div class="container">
-      <div class="row row-centered">
-        <article class="col-lg-6 col-md-12 col-centered orchid">
-          <img class="orchids" src="images/orchids_final2_small.gif" alt="Orchid">
-        </article>
 
-        <article class="col-lg-6 col-md-12 col-centered pitch">
-          <div class="sales-pitch">
-            <h2>Getting Things Done</h2>
-            <p>Employing both the latest technology and design trends projects are delivered on time.
-              No matter how unimaginable the issue at hand seems to be, there is always a way to find a
-              solution. Real time creative solutions for mobile apps, web dewelopment, translation and
-              design. For more information get in touch with us.</p>
-          </div>
-
-          <div class="hvr-ripple-out">
-            <span>Contact</span>
-          </div>
-        </article>
+    <div class="carosel-wrapper">
+      <h2>Featured work</h2>
+      <div class="mk-carousel" id="mkCarousel">
+        <img class="active" src="https://unsplash.it/500/500?image=893" alt="">
+        <img src="https://unsplash.it/500/500?image=693" alt="">
+        <img src="https://unsplash.it/500/500?image=593" alt="">
+        <img src="https://unsplash.it/500/500?image=493" alt="">
+        <img src="https://unsplash.it/500/500?image=393" alt="">
+        <img src="https://unsplash.it/500/500?image=293" alt="">
+        <img src="https://unsplash.it/500/500?image=193" alt="">
       </div>
     </div>
+
+    <section id="get-thnigs-done">
+      <div class="container">
+        <div class="row row-centered">
+          <article class="col-lg-6 col-md-12 col-centered orchid">
+            <img class="orchids" src="images/orchids_final2_small.gif" alt="Orchid">
+          </article>
+
+          <article class="col-lg-6 col-md-12 col-centered pitch">
+            <div class="sales-pitch">
+              <h2>Getting Things Done</h2>
+              <p>Employing both the latest technology and design trends projects are delivered on time.
+                No matter how unimaginable the issue at hand seems to be, there is always a way to find a
+                solution. Real time creative solutions for mobile apps, web dewelopment, translation and
+                design. For more information get in touch with us.</p>
+            </div>
+
+            <div class="hvr-ripple-out">
+              <span>Contact</span>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
     <div id="particles-js"></div>
@@ -181,6 +198,7 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="scripts/mk-3Dcarousel.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

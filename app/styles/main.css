@@ -1,6 +1,11 @@
+
 @import url(https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700);
 @import url(https://fonts.googleapis.com/css?family=Catamaran:400,900);
 @import url(https://fonts.googleapis.com/css?family=Abel);
+
+.wf-loading {
+  visibility: hidden;
+}
 
 body {
 
@@ -189,7 +194,7 @@ header .navbar-brand h5 {
 
 .icon-chevron-down:before {
 
-  content: "\e900";
+  /*content: "\e900";*/
   color: #c0c1c2;
   font-size: 1.4em;
 
@@ -231,8 +236,8 @@ div h1 {
 
 #services {
 
-  height: 1085px;
   background-color: #F4F5F7;
+  padding-bottom: 60px;
 
 }
 
@@ -253,7 +258,38 @@ div h1 {
 
 }
 
-@media screen and (max-width: 1999px) {
+/*carousel*/
+
+.carosel-wrapper {
+
+  max-width:700px;
+  margin:2em auto;
+  margin-bottom: 40px;
+
+}
+
+.carosel-wrapper h2 {
+
+  font-family: "freight-sans-pro";
+  font-size: 3.5em;
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4A4A4A;
+  padding-top: 70px;
+  padding-bottom: 0;
+
+}
+
+.mk-carousel {
+
+  height: 450px;
+}
+
+
+/*@media screen and (max-width: 1999px) {
 
   #services {
 
@@ -316,7 +352,7 @@ div h1 {
     height: 1880px;
 
   }
-}
+}*/
 
 
 
@@ -348,14 +384,32 @@ font-weight: 600;
 
 }
 
+
+
 p {
 
 font-size: 2em;
 padding: 20px 40px 20px 40px;
-width: 350;
 margin: 0 auto 0 auto;
 line-height: 1.6em;
 
+}
+
+
+.presentation p {
+
+  padding-top: 70px;
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+  .presentation p {
+
+    padding-top: 30px;
+
+  }
 }
 
 .cube-wrapper {
@@ -365,7 +419,7 @@ line-height: 1.6em;
   perspective: 1000px;
   width: 200px;
   height: 68px;
-  margin: 0 auto !important;
+  margin: 0 auto;
   font-family: "freight-sans-pro";
   font-weight: 100;
   background: #f1f1f1;
@@ -482,6 +536,13 @@ line-height: 1.6em;
 }
 
 /*getting things done section*/
+
+#get-thnigs-done {
+
+  background-image: url(../images/contemporary_china.png);
+
+}
+
 .orchids {
 
   margin-top: -20%;
@@ -661,7 +722,7 @@ line-height: 1.6em;
 
   width: 100%;
   height: 350px;
-  background-color: #723939;
+  background-color: #5d2a2a;
 
 }
 
@@ -785,7 +846,7 @@ footer .container {
 
 .icon-chevron-up:before {
 
-  content: "\e901";
+  /*content: "\e901";*/
   font-size: 25px;
 
 
@@ -858,6 +919,40 @@ footer .container {
 
 }
 
+
+/*Projects page*/
+
+.projects-display {
+
+  background-image: url(../images/contemporary_china.png);
+}
+
+.projects-display h2 {
+
+  font-size: 3.5em;
+  font-weight: 800;
+  margin-top: 30px;
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #4A4A4A;;
+  padding-top: 40px;
+  padding-bottom: 30px;
+
+}
+
+#portfolio-filter {
+
+  border: none !important;
+}
+
+#og-grid {
+
+  max-width: 1100px;
+  padding-bottom: 70px;
+}
+
+
 /*About page*/
 
   .behind-the-scene h2 {
@@ -893,13 +988,16 @@ footer .container {
 }
 
 #low-poly:hover {
+
   -webkit-filter: grayscale(80%);
+
 }
 
 .presentation {
 
   padding-top: 0;
   margin-bottom: 40px;
+  font-size: 0.9em;
 
 }
 
@@ -1098,7 +1196,7 @@ footer .container {
 
   .section-wrapper {
 
-   background-image: url(../images/dimension.png);
+   background-image: url(../images/contemporary_china.png);
 
   }
 
@@ -1314,7 +1412,7 @@ h2 span {
 
 .location-info {
 
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 
 
 }
@@ -1355,3 +1453,4 @@ h2 span {
   padding-bottom: 72px;
 
 }
+
