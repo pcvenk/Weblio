@@ -1,0 +1,39 @@
+.og-pointer {
+
+  /*margin: -15px 0 0 -15px;*/
+
+}
+
+.og-details p {
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #999;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+
+}
+
+.og-details h3 {
+
+  margin: 10px;
+}
+
+.og-close {
+
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+
+}
+
+.og-details a.first {
+
+  margin-left: 0;
+
+
+}

@@ -21,6 +21,8 @@
       <link rel="stylesheet" href="../styles/main.css" />
       <link href="../icons/style.css" rel="stylesheet" />
       <link rel="stylesheet" type="text/css" href="../styles/elastic_grid.min.css" />
+      <link rel="stylesheet" type="text/css" href="../styles/projects.css" />
+
       <!-- endbuild -->
     </head>
     <body>
@@ -42,10 +44,10 @@
             </div><!-- navbar-header -->
             <div class="collapse navbar-collapse" id="collapse">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="../index.html">Home</a></li>
-                <li class="active"><a href="../pages/projects.html">Projects</a></li>
-                <li><a href="../pages/about.html">About</a></li>
-                <li><a href="../pages/contact.html">Contact</a></li>
+                <li><a href="../index.html"><span>Home</span></a></li>
+                <li class="active"><a href="../pages/projects.html"><span>Projects</span></a></li>
+                <li><a href="../pages/about.html"><span>About</span></a></li>
+                <li><a href="../pages/contact.html"><span>Contact</span></a></li>
               </ul>
             </div><!-- collapse navbar-collapse -->
           </div><!-- container -->
@@ -55,13 +57,12 @@
       <div class="carosel-wrapper">
         <h2>Featured work</h2>
         <div class="mk-carousel" id="mkCarousel">
-          <img class="active" src="https://unsplash.it/500/500?image=893" alt="">
-          <img src="https://unsplash.it/500/500?image=693" alt="">
-          <img src="https://unsplash.it/500/500?image=593" alt="">
-          <img src="https://unsplash.it/500/500?image=493" alt="">
-          <img src="https://unsplash.it/500/500?image=393" alt="">
-          <img src="https://unsplash.it/500/500?image=293" alt="">
-          <img src="https://unsplash.it/500/500?image=193" alt="">
+          <img src="../images/large/apple.png" alt="">
+          <img class="active" src="../images/large/google+.png" alt="">
+          <img src="../images/large/microsoft.png" alt="">
+          <img src="../images/Carousel-large/PA101532.jpg" alt="">
+          <img src="../images/Carousel-large/PA101546.jpg" alt="">
+          <img src="../images/Carousel-large/elan.jpg" alt="">
         </div>
       </div>
 
@@ -102,6 +103,7 @@
             <div class="col-md-4 col-sm-12">
               <div id="social-icons">
                 <a href="https://si.linkedin.com/in/primož-cvenkelj-191a07a6" class="icon-linkedin"></a>
+                <a href="https://github.com/pcvenk" class="icon-github"></a>
                 <a href="https://www.facebook.com/primoz.cvenkelj" class="icon-facebook"></a>
               </div>
             </div>
@@ -130,6 +132,7 @@
       <script src="../scripts/classie.js"></script>
       <script type="text/javascript" src="../scripts/elastic_grid.min.js"></script>
       <script src="../scripts/mk-3Dcarousel.js"></script>
+
 
 
 
@@ -164,104 +167,213 @@
             'hoverInverse': false,
             'expandingSpeed': 500,
             'expandingHeight': 500,
-            //'showAllText' :  'All',
+            'showAllText' :  'All',
             'items' :
               [
                 {
-                  'title'         : 'Title #1',
-                  'description'   : ' Description text here',
-                  'thumbnail'     : ['../images/small/1.jpg'],
-                  'large'         : ['../images/large/2.jpg'],
-                  'url'           : [ 'http://bonchen.net/' ],
+                  'title'         : 'Google+',
+                  'description'   : 'Worked on projects for Google - translated various texts for Google+ services.' +
+                  ' Work consited of translation and localization of various Help articles and was done with online CAT tools.',
+                  'thumbnail'     : ['../images/small/google.png'],
+                  'large'         : ['../images/large/google+.png'],
                   'button_list'   :
                     [
-                      { 'title':'More Info', 'url' : 'http://bonchen.net/' },
+                      { 'title':'Google+', 'url' : 'https://support.google.com/plus/?hl=sl#topic=6320376' },
                     ],
-                  'tags'          : ['Portrait']
+                  'tags'          : ['Translation']
                 },
                 {
-                  'title'         : 'Title #2',
-                  'description'   : ' Description text here',
-                  'thumbnail'     : ['../images/small/1.jpg', '../images/small/2.jpg'],
-                  'large'         : ['../images/large/1.jpg', '../images/large/2.jpg'],
+                  'title'         : 'Windows',
+                  'description'   : 'Been involved in translating of Windows OS. Localized Windows user interface' +
+                  ' into Slovene and translated numerous text regarding the Help documentation. As part of ' +
+                  ' the Windows OS, I also cooperated with a team of translators involved with translation' +
+                  ' of the Office suite into Slovene, again both the UI and Help documentation.',
+                  'thumbnail'     : ['../images/small/Microsoft.png'],
+                  'large'         : ['../images/large/microsoft.png'],
                   'button_list'   :
                     [
-                      { 'title':'Demo', 'url' : 'http://bonchen.net/' },
-                      { 'title':'Download', 'url':'http://porfolio.bonchen.net/'}
+                      { 'title':'Windows', 'url' : 'https://www.microsoft.com/sl-si/windows' },
+                      { 'title':'Office', 'url':'https://www.microsoft.com/sl-si/'}
                     ],
-                  'tags'          : ['Portrait']
+                  'tags'          : ['Translation']
                 },
                 {
-                  'title'         : 'Title #3',
-                  'description'   : ' Description text here',
-                  'thumbnail'     : ['../images/small/1.jpg', '../images/small/2.jpg'],
-                  'large'         : ['../images/large/1.jpg', '../images/large/2.jpg'],
+                  'title'         : 'Apple',
+                  'description'   : 'Was part of a team whose job was to translate Support articles for the Apple mobile devices. ' +
+                  ' These text mainly include Help for handling with iOS and other content related to Apple',
+                  'thumbnail'     : ['../images/small/apple.png'],
+                  'large'         : ['../images/large/apple.png'],
                   'button_list'   :
                     [
-                      { 'title':'Demo', 'url' : 'http://bonchen.net/' },
-                      { 'title':'Download', 'url':'http://porfolio.bonchen.net/'}
+                      { 'title':'Apple', 'url' : 'https://www.apple.com/si/support/iphone/' },
                     ],
-                  'tags'          : ['Portrait']
+                  'tags'          : ['Translation']
                 },
                 {
-                  'title'         : 'Title #4',
-                  'description'   : 'Description text here',
-                  'thumbnail'     : ['../images/small/4.jpg', '../images/small/5.jpg'],
-                  'large'         : ['../images/large/4.jpg', '../images/large/5.jpg'],
+                  'title'         : 'Landscape',
+                  'description'   : 'This photo was taken in the middle of nowhere on the NZ Southern island',
+                  'thumbnail'     : ['../images/small/PA101532.jpg'],
+                  'large'         : ['../images/large/PA101532.jpg'],
                   'button_list'   :
                     [
-                      { 'title':'Demo', 'url' : 'http://bonchen.net/' },
-                      { 'title':'Download', 'url':'http://porfolio.bonchen.net/'}
                     ],
-                  'tags'          : ['Vintage']
+                  'tags'          : ['Photography']
                 },
                 {
-                'title'         : 'Title #5',
-                'description'   : 'Description text here',
-                'thumbnail'     : ['../images/small/15.jpg', '../images/small/2.jpg'],
-                'large'         : ['../images/large/15.jpg', '../images/large/2.jpg'],
+                'title'         : 'Aouthern Alps NZ',
+                'description'   : 'Taken in the early morning at the lake shore in NZ.',
+                'thumbnail'     : ['../images/small/PA101546.jpg'],
+                'large'         : ['../images/large/PA101546.jpg'],
                 'button_list'   :
                   [
-                    { 'title':'Demo', 'url' : 'http://bonchen.net/' },
-                    { 'title':'Download', 'url':'http://porfolio.bonchen.net/'}
                   ],
-                'tags'          : ['BW']
+                'tags'          : ['Photography']
               },
                 {
-                  'title'         : 'Title #6',
-                  'description'   : 'Description text here',
-                  'thumbnail'     : ['../images/small/15.jpg', '../images/small/2.jpg'],
-                  'large'         : ['../images/large/15.jpg', '../images/large/2.jpg'],
+                  'title'         : 'Morning Mist',
+                  'description'   : '',
+                  'thumbnail'     : ['../images/small/CP_jutro2.jpg'],
+                  'large'         : ['../images/large/CP_jutro2.jpg'],
                   'button_list'   :
                     [
-                      { 'title':'Demo', 'url' : 'http://bonchen.net/' },
-                      { 'title':'Download', 'url':'http://porfolio.bonchen.net/'}
                     ],
-                  'tags'          : ['BW']
+                  'tags'          : ['Photography']
                 },
                 {
-                'title'         : 'Title #7',
-                'description'   : 'Description text here',
-                'thumbnail'     : ['../images/small/15.jpg', '../images/small/2.jpg'],
-                'large'         : ['../images/large/15.jpg', '../images/large/2.jpg'],
-                'button_list'   :
-                  [
-                    { 'title':'Demo', 'url' : 'http://bonchen.net/' },
-                    { 'title':'Download', 'url':'http://porfolio.bonchen.net/'}
-                  ],
-                'tags'          : ['BW']
-              },
-                {
-                  'title'         : 'Title #8',
-                  'description'   : 'Description text here',
-                  'thumbnail'     : ['../images/small/15.jpg', '../images/small/2.jpg'],
-                  'large'         : ['../images/large/15.jpg', '../images/large/2.jpg'],
+                  'title'         : '',
+                  'description'   : '',
+                  'thumbnail'     : ['../images/small/P1066360.jpg'],
+                  'large'         : ['../images/large/P1066360.jpg'],
                   'button_list'   :
                     [
-                      { 'title':'Demo', 'url' : 'http://bonchen.net/' },
-                      { 'title':'Download', 'url':'http://porfolio.bonchen.net/'}
                     ],
-                  'tags'          : ['BW']
+                  'tags'          : ['Photography']
+                },
+                {
+                  'title'         : 'Tenative look',
+                  'description'   : '',
+                  'thumbnail'     : ['../images/small/P1122363.jpg'],
+                  'large'         : ['../images/large/P1122363.jpg'],
+                  'button_list'   :
+                    [
+                    ],
+                  'tags'          : ['Photography']
+                },
+                {
+                  'title'         : 'Lake Bohinj',
+                  'description'   : '',
+                  'thumbnail'     : ['../images/small/P1225413p.jpg'],
+                  'large'         : ['../images/large/P1225413p.jpg'],
+                  'button_list'   :
+                    [
+                    ],
+                  'tags'          : ['Photography']
+                },
+                {
+                  'title'         : 'Little Droplets',
+                  'description'   : '',
+                  'thumbnail'     : ['../images/small/P2174275.jpg'],
+                  'large'         : ['../images/large/P2174275.jpg'],
+                  'button_list'   :
+                    [
+                    ],
+                  'tags'          : ['Photography']
+                },
+                {
+                'title'         : 'Sprinh Hellebore',
+                'description'   : '',
+                'thumbnail'     : ['../images/small/P4086989.jpg'],
+                'large'         : ['../images/large/P4086989.jpg'],
+                'button_list'   :
+                  [
+                  ],
+                'tags'          : ['Photography']
+              },
+                {
+                  'title'         : 'Butterfly Joy',
+                  'description'   : '',
+                  'thumbnail'     : ['../images/small/P5164630.jpg'],
+                  'large'         : ['../images/large/P5164630.jpg'],
+                  'button_list'   :
+                    [
+                    ],
+                  'tags'          : ['Photography']
+                },
+                {
+                  'title'         : 'Keep the Distance',
+                  'description'   : '',
+                  'thumbnail'     : ['../images/small/P7194090.jpg'],
+                  'large'         : ['../images/large/P7194090.jpg'],
+                  'button_list'   :
+                    [
+                    ],
+                  'tags'          : ['Photography']
+                },
+                {
+                  'title'         : 'Autumn Mist',
+                  'description'   : '',
+                  'thumbnail'     : ['../images/small/PA266241.jpg'],
+                  'large'         : ['../images/large/PA266241.jpg'],
+                  'button_list'   :
+                    [
+                    ],
+                  'tags'          : ['Photography']
+                },
+                {
+                  'title'         : 'Combweb',
+                  'description'   : '',
+                  'thumbnail'     : ['../images/small/P8299746.jpg'],
+                  'large'         : ['../images/large/P8299746.jpg'],
+                  'button_list'   :
+                    [
+                    ],
+                  'tags'          : ['Photography']
+                },
+                {
+                  'title'         : 'Sloveniafood.com',
+                  'description'   : 'Designed the promotional leaflet for a local company named BFS that' +
+                  ' ships abroad local Slovene culinary products.',
+                  'thumbnail'     : ['../images/small/BSF.png'],
+                  'large'         : ['../images/large/BSF.png'],
+                  'button_list'   :
+                    [
+                      { 'title':'More Info', 'url' : 'http://sloveniafood.com' },
+
+                    ],
+                  'tags'          : ['Design']
+                },
+                {
+                  'title'         : 'Presentatinal CV',
+                  'description'   : 'A slightly unorthodox approach for a CV. Think out of the box and gain more' +
+                  ' changes when applying for a job.',
+                  'thumbnail'     : ['../images/small/CV1.png'],
+                  'large'         : ['../images/large/CV1.png'],
+                  'button_list'   :
+                    [
+                    ],
+                  'tags'          : ['Design']
+                },
+                {
+                  'title'         : 'Winter Fun',
+                  'description'   : 'This illustration was made for an Elan promotion campaign',
+                  'thumbnail'     : ['../images/small/elan.jpg'],
+                  'large'         : ['../images/large/elan.jpg'],
+                  'button_list'   :
+                    [
+                    ],
+                  'tags'          : ['Design']
+                },
+                {
+                  'title'         : 'Weblio',
+                  'description'   : 'Presentatinal website of a new company done from scratch. A custom made solution' +
+                  ' for everyone not wanting a plastic feel for ones website. Highly modular in every single aspect.',
+                  'thumbnail'     : ['../images/small/2.jpg'],
+                  'large'         : ['../images/large/15.jpg'],
+                  'button_list'   :
+                    [
+                      { 'title':'Contact', 'url' : 'contact.html' },
+                    ],
+                  'tags'          : ['Development']
                 }
 
               ]

@@ -41,10 +41,10 @@
           </div><!-- navbar-header -->
           <div class="collapse navbar-collapse" id="collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="pages/projects.html">Projects</a></li>
-              <li><a href="pages/about.html">About</a></li>
-              <li><a href="pages/contact.html">Contact</a></li>
+              <li class="active"><a href="index.html"><span>Home</span></a></li>
+              <li><a href="pages/projects.html"><span>Projects</span></a></li>
+              <li><a href="pages/about.html"><span>About</span></a></li>
+              <li><a href="pages/contact.html"><span>Contact</span></a></li>
             </ul>
           </div><!-- collapse navbar-collapse -->
         </div><!-- container -->
@@ -82,7 +82,7 @@
       <div class="container">
         <div class="row row-centered">
           <article class="col-sm-6 col-services">
-            <img class="icon" src="images/design.png" alt="Design">
+            <img class="icon" src="images/dsgn.png" alt="Design">
                 <span class="content"><h3>Design</h3>
                 <p>Being responsive is the new black. You ask, we deliver!</p></span>
           </article>
@@ -101,7 +101,7 @@
             <span>Interested</span>
           </div>
           <div class="active-state">
-            <span>More Info</span>
+            <a href="pages/projects.html" class="hvr-ripple-out2"><span>More Info</span></a>
           </div>
         </div>
       </div>
@@ -111,13 +111,12 @@
     <div class="carosel-wrapper">
       <h2>Featured work</h2>
       <div class="mk-carousel" id="mkCarousel">
-        <img class="active" src="https://unsplash.it/500/500?image=893" alt="">
-        <img src="https://unsplash.it/500/500?image=693" alt="">
-        <img src="https://unsplash.it/500/500?image=593" alt="">
-        <img src="https://unsplash.it/500/500?image=493" alt="">
-        <img src="https://unsplash.it/500/500?image=393" alt="">
-        <img src="https://unsplash.it/500/500?image=293" alt="">
-        <img src="https://unsplash.it/500/500?image=193" alt="">
+        <img src="images/large/apple.png" alt="">
+        <img class="active" src="images/large/google+.png" alt="">
+        <img src="images/large/microsoft.png" alt="">
+        <img src="images/Carousel-large/PA101532.jpg" alt="">
+        <img src="images/Carousel-large/PA101546.jpg" alt="">
+        <img src="images/Carousel-large/elan.jpg" alt="">
       </div>
     </div>
 
@@ -137,9 +136,8 @@
                 design. For more information get in touch with us.</p>
             </div>
 
-            <div class="hvr-ripple-out">
-              <span>Contact</span>
-            </div>
+            <a href="pages/contact.html" class="hvr-ripple-out"><span>Contact</span></a>
+
           </article>
         </div>
       </div>
@@ -176,6 +174,7 @@
           <div class="col-md-4 col-sm-12">
             <div id="social-icons">
               <a href="https://si.linkedin.com/in/primož-cvenkelj-191a07a6" class="icon-linkedin"></a>
+              <a href="https://github.com/pcvenk" class="icon-github"></a>
               <a href="https://www.facebook.com/primoz.cvenkelj" class="icon-facebook"></a>
             </div>
           </div>
@@ -197,8 +196,9 @@
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="scripts/mk-3Dcarousel.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../scripts/mk-3Dcarousel.js"></script>
+
     <!-- endbower -->
     <!-- endbuild -->
 

@@ -1,5 +1,4 @@
-
-  //hero scroll
+ //hero scroll
   function smoothScrollTo(services) {
     $('html, body').animate({
       scrollTop: ($(services).offset().top)
@@ -126,16 +125,35 @@
 //carousel
 
 
-$(function(){
+  $(function(){
     $('#mkCarousel').mkCarousel({
       offset: 130,
       mobileOffset: 60
+
     });
   });
 
+ $('#buttonID').click( function(event) {
+   event.preventDefault();
+   window.location = "theNewPage.html";
+ });
 
+ function initItemsEvents($items) {
+   $items.on( 'click', 'span.og-close', function(event) {
+     event.preventDefault();
+     window.location = 'projectssubpage.html'
+   } ).children( 'a' ).on( 'click', function(event) {
+     var $item = $( this ).parent();
+     //$(this).addClass('unhoverdir');
+     //remove animate class
+     $item.removeClass('animate');
 
+     // check if item already opened
+     current === $item.index() ? hidePreview($(this)) : showPreview( $item );
+     return false;
 
+   } );
+ }
 
 
 

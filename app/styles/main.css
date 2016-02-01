@@ -51,13 +51,18 @@ header .navbar-default .navbar-nav a {
 
 }
 
-header .navbar-default .navbar-nav .active a {
+header .navbar-default .navbar-nav .active a span {
 
   color: #aa5450;
-  background: transparent !important;
-  border-bottom: 1px solid #7b3d3d;
+  border-bottom: 1px solid #aa5450;
   text-shadow: none;
   padding-bottom: 2px;
+
+}
+
+header .navbar-default .navbar-nav .active a {
+
+  background: transparent !important;
 
 }
 
@@ -514,6 +519,84 @@ line-height: 1.6em;
 
 }
 
+.active-state span {
+
+  color: #fff;
+
+}
+
+.hvr-ripple-out2 {
+
+  cursor: pointer;
+  width: 194px;
+  height: 60px;
+  background: #7b3d3d;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #fff;
+  margin: -10px auto 0 auto;
+
+}
+
+@-webkit-keyframes hvr-ripple-out2 {
+
+  100% {
+    top: -16px;
+    right: -16px;
+    bottom: -21px;
+    left: -16px;
+    opacity: 0;
+
+  }
+}
+
+@keyframes hvr-ripple-out2 {
+
+  100% {
+    top: -16px;
+    right: -16px;
+    bottom: -21px;
+    left: -16px;
+    opacity: 0;
+
+  }
+}
+
+.hvr-ripple-out2 {
+
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+
+}
+
+.hvr-ripple-out2:before {
+
+  content: '';
+  position: absolute;
+  border: #7b3d3d solid 6px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+
+}
+
+.hvr-ripple-out2:hover:before, .hvr-ripple-out2:focus:before, .hvr-ripple-out2:active:before {
+
+  -webkit-animation-name: hvr-ripple-out2;
+  animation-name: hvr-ripple-out2;
+
+}
+
 .cube:active .default-state {
 
   background: #7b3d3d;
@@ -640,12 +723,19 @@ line-height: 1.6em;
 
   }
 
+a:link, a:visited a:hover {
+
+  text-decoration: none;
+
+}
+
 .hvr-ripple-out span {
 
   display: block;
   font-family: "freight-sans-pro";
   font-weight: 200;
   padding-top: 15px;
+  color: white;
 
 
 }
@@ -778,9 +868,14 @@ footer .container {
 
 }
 
+.address-additional {
+
+  margin-bottom: 20px;
+
+}
+
 .icon-linkedin {
 
-  text-decoration: none;
   font-size: 25px;
 
 }
@@ -792,6 +887,19 @@ footer .container {
 
 }
 
+.icon-github {
+
+  font-size: 25px;
+  padding-left: 10px;
+
+}
+
+.icon-github:hover {
+
+  cursor: pointer;
+  color: black;
+
+}
 
 .icon-facebook {
 
@@ -808,11 +916,13 @@ footer .container {
 }
 
 
+
+
 #social-icons {
 
   text-align: left;
-  margin-top: 35px;
-  margin-left: 20px
+  margin-top: 40px;
+
 
 }
 
@@ -905,7 +1015,7 @@ footer .container {
 
   .up-slider {
 
-    right: 25px;
+    right: 55px;
 
   }
 
