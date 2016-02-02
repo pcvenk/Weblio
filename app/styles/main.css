@@ -403,7 +403,7 @@ line-height: 1.6em;
 
 .presentation p {
 
-  padding-top: 70px;
+  padding-top: 80px;
 
 }
 
@@ -412,7 +412,7 @@ line-height: 1.6em;
 
   .presentation p {
 
-    padding-top: 30px;
+    padding-top: 20px;
 
   }
 }
@@ -691,7 +691,7 @@ line-height: 1.6em;
 
 .sales-pitch p {
 
-  text-align: left;
+  text-align: center;
   font-weight: 100;
   margin-bottom: 10px;
   font-size: 1.7em;
@@ -846,7 +846,7 @@ footer .container {
   background-repeat: no-repeat;
   position: relative;
   top: 50px;
-  left: 40px;
+  left: 80px;
   height: 80px;
 
 }
@@ -868,6 +868,15 @@ footer .container {
 
 }
 
+.address p {
+
+  font-size: 2em;
+  padding-left: 80px;
+  margin: 0 auto 0 auto;
+  line-height: 1.6em;
+
+}
+
 .address-additional {
 
   margin-bottom: 20px;
@@ -877,6 +886,7 @@ footer .container {
 .icon-linkedin {
 
   font-size: 25px;
+  color: #c0c1c2;
 
 }
 
@@ -891,6 +901,7 @@ footer .container {
 
   font-size: 25px;
   padding-left: 10px;
+  color: #c0c1c2;
 
 }
 
@@ -905,6 +916,7 @@ footer .container {
 
   font-size: 25px;
   padding-left: 5px;
+  color: #c0c1c2;
 
 }
 
@@ -920,10 +932,20 @@ footer .container {
 
 #social-icons {
 
-  text-align: left;
+  text-align: center;
   margin-top: 40px;
 
+}
 
+.address-additional a {
+
+  color: #c0c1c2;
+
+}
+
+.address-additional a:hover {
+
+  color: black;
 }
 
 .back-to-top {
@@ -979,6 +1001,12 @@ footer .container {
     text-align: center;
     margin-top: 27px;
     height: 100px;
+
+  }
+
+  .address p {
+
+    padding-left: 30px;
 
   }
 
@@ -1105,9 +1133,8 @@ footer .container {
 
 .presentation {
 
-  padding-top: 0;
   margin-bottom: 40px;
-  font-size: 0.9em;
+  font-size: 0.8em;
 
 }
 
